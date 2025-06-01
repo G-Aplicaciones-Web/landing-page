@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoVolt - Gestión Inteligente de Energía</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="toolbar" id="mainToolbar">
+      <div class="toolbar-left">
+        <a href="#hero" class="logo-link" aria-label="EcoVolt Home">
+          <img
+            src="assets/logo.png"
+            alt="EcoVolt Logo"
+            class="toolbar-logo"
+          />
+          <span class="toolbar-brand-name">EcoVolt</span>
+        </a>
+      </div>
+      <nav class="toolbar-nav">
+        <ul>
+          <li>
+            <a href="#how-it-works" data-lang-key="nav_how_it_works"
+              >¿Cómo Funciona?</a
+            >
+          </li>
+          <li>
+            <a href="#features" data-lang-key="nav_features">Características</a>
+          </li>
+          <li>
+            <a href="#services" data-lang-key="nav_services">Servicios</a>
+          </li>
+          <li><a href="#cases" data-lang-key="nav_cases">Casos Reales</a></li>
+          <li>
+            <a href="#testimonials" data-lang-key="nav_testimonials"
+              >Testimonios</a
+            >
+          </li>
+          <li>
+            <a href="#about-us" data-lang-key="nav_about_us"
+              >Acerca de Nosotros</a
+            >
+          </li>
+          <li>
+            <a href="#contact" data-lang-key="nav_contact">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="toolbar-right">
+        <button class="btn btn-login" data-lang-key="btn_login">
+          Iniciar Sesión
+        </button>
+        <button class="btn btn-lang" id="langToggle">EN | ES</button>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <div class="mobile-nav-content">
+        <button class="close-mobile-nav" id="closeMobileNav">&times;</button>
+        <nav class="mobile-nav">
+          <ul>
+            <li>
+              <a href="#how-it-works" data-lang-key="nav_how_it_works"
+                >¿Cómo Funciona?</a
+              >
+            </li>
+            <li>
+              <a href="#features" data-lang-key="nav_features"
+                >Características</a
+              >
+            </li>
+            <li>
+              <a href="#services" data-lang-key="nav_services">Servicios</a>
+            </li>
+            <li><a href="#cases" data-lang-key="nav_cases">Casos Reales</a></li>
+            <li>
+              <a href="#testimonials" data-lang-key="nav_testimonials"
+                >Testimonios</a
+              >
+            </li>
+            <li>
+              <a href="#about-us" data-lang-key="nav_about_us"
+                >Acerca de Nosotros</a
+              >
+            </li>
+            <li>
+              <a href="#contact" data-lang-key="nav_contact">Contáctanos</a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-login mobile-btn-login"
+            data-lang-key="btn_login"
+          >
+            Iniciar Sesión
+          </button>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <section id="hero" class="hero section-bg-light-green">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-subtitle text-dark" data-lang-key="hero_subtitle">
+              Gestiona tu energía de forma inteligente
+            </p>
+            <h1 data-lang-key="hero_title_main">
+              Monitorea, analiza y optimiza tu consumo
+            </h1>
+            <p
+              class="hero-description text-dark"
+              data-lang-key="hero_description"
+            >
+              EcoVolt es la plataforma líder en Perú que te permite controlar tu
+              consumo eléctrico, reducir costos y contribuir a la sostenibilidad
+              de tu empresa.
+            </p>
+            <button class="btn btn-primary" data-lang-key="btn_start_now">
+              Empieza Ya!
+            </button>
+          </div>
+          <div class="hero-image">
+            <img
+              src="assets/energia.png"
+              alt="Gestión de Energía Inteligente"
+            />
+          </div>
+        </div>
+      </section>
+
+      <img
+        src="assets/waves1.png"
+        alt="Wave Transition"
+        class="wave-divider"
+      />
+
+      <section id="how-it-works" class="how-it-works section-bg-bright-green">
+        <h2 class="section-title text-light" data-lang-key="how_it_works_title">
+          ¿Cómo Funciona?
+        </h2>
+        <p
+          class="section-description text-light"
+          data-lang-key="how_it_works_description"
+        >
+          Transforma la manera en que tu empresa gestiona el consumo eléctrico.
+          Instala, monitorea y toma decisiones inteligentes con una plataforma
+          pensada para ahorrar, cumplir normativas y ser más sostenible.
+        </p>
+        <div class="cards-grid how-it-works-grid">
+          <div class="card card-how-it-works section-bg-light-green">
+            <img src="assets/monitoreo.png" alt="Icono de Monitoreo" />
+            <h3 class="text-dark" data-lang-key="how_it_works_card1_title">
+              Instala
+            </h3>
+            <p class="text-dark" data-lang-key="how_it_works_card1_description">
+              Implementa nuestros dispositivos IoT de forma sencilla y rápida en
+              tus instalaciones.
+            </p>
+          </div>
+          <div class="card card-how-it-works section-bg-light-green">
+            <img src="assets/analisis.png" alt="Icono de Análisis" />
+            <h3 class="text-dark" data-lang-key="how_it_works_card2_title">
+              Monitorea
+            </h3>
+            <p class="text-dark" data-lang-key="how_it_works_card2_description">
+              Visualiza en tiempo real el consumo energético desde nuestra
+              plataforma intuitiva.
+            </p>
+          </div>
+          <div class="card card-how-it-works section-bg-light-green">
+            <img src="assets/sensor.png" alt="Icono de Sensor" />
+            <h3 class="text-dark" data-lang-key="how_it_works_card3_title">
+              Analiza
+            </h3>
+            <p class="text-dark" data-lang-key="how_it_works_card3_description">
+              Accede a reportes detallados y tendencias para identificar
+              oportunidades de mejora.
+            </p>
+          </div>
+          <div class="card card-how-it-works section-bg-light-green">
+            <img
+              src="assets/panel_control.png"
+              alt="Icono de Panel de Control"
+            />
+            <h3 class="text-dark" data-lang-key="how_it_works_card4_title">
+              Optimiza
+            </h3>
+            <p class="text-dark" data-lang-key="how_it_works_card4_description">
+              Toma decisiones inteligentes para reducir tus costos y ser más
+              eficiente.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <img
+        src="assets/waves2.png"
+        alt="Wave Transition"
+        class="wave-divider"
+      />
+
+      <section id="features" class="features section-bg-light-green">
+        <h2 class="section-title text-dark" data-lang-key="features_title">
+          Descubre el Poder de EcoVolt
+        </h2>
+        <p
+          class="section-description text-dark"
+          data-lang-key="features_description"
+        >
+          Nuestra plataforma integra tecnología de vanguardia para brindarte
+          control total sobre tu energía y maximizar la eficiencia operativa de
+          tu empresa.
+        </p>
+        <div class="cards-grid">
+          <div class="card card-feature section-bg-light-green">
+            <div class="card-icon-title">
+              <div class="icon-box">
+                <img src="assets/monitoreo.png" alt="Monitoreo Icon" />
+              </div>
+              <span class="card-eco-tag text-dark" data-lang-key="feature_tag1"
+                >EcoVolt One</span
+              >
+            </div>
+            <h3 class="text-dark" data-lang-key="feature_card1_title">
+              Monitoreo en Tiempo Real
+            </h3>
+            <p class="text-dark" data-lang-key="feature_card1_description">
+              Visualiza el consumo eléctrico de todos tus equipos y áreas,
+              detectando anomalías al instante.
+            </p>
+          </div>
+          <div class="card card-feature section-bg-light-green">
+            <div class="card-icon-title">
+              <div class="icon-box">
+                <img src="assets/analisis.png" alt="Análisis Icon" />
+              </div>
+              <span class="card-eco-tag text-dark" data-lang-key="feature_tag2"
+                >EcoVolt Two</span
+              >
+            </div>
+            <h3 class="text-dark" data-lang-key="feature_card2_title">
+              Análisis Avanzado de Datos
+            </h3>
+            <p class="text-dark" data-lang-key="feature_card2_description">
+              Accede a reportes detallados y tendencias de consumo para
+              identificar patrones, ineficiencias y oportunidades de ahorro.
+            </p>
+          </div>
+          <div class="card card-feature section-bg-light-green">
+            <div class="card-icon-title">
+              <div class="icon-box">
+                <img src="assets/sensor.png" alt="Sensor Icon" />
+              </div>
+              <span class="card-eco-tag text-dark" data-lang-key="feature_tag3"
+                >EcoVolt Three</span
+              >
+            </div>
+            <h3 class="text-dark" data-lang-key="feature_card3_title">
+              Alertas y Notificaciones Inteligentes
+            </h3>
+            <p class="text-dark" data-lang-key="feature_card3_description">
+              Recibe avisos automáticos sobre picos de consumo, fallas o
+              desviaciones para actuar proactivamente y evitar sobrecostos.
+            </p>
+          </div>
+          <div class="card card-feature section-bg-light-green">
+            <div class="card-icon-title">
+              <div class="icon-box">
+                <img
+                  src="assets/panel_control.png"
+                  alt="Panel Control Icon"
+                />
+              </div>
+              <span class="card-eco-tag text-dark" data-lang-key="feature_tag4"
+                >EcoVolt Four</span
+              >
+            </div>
+            <h3 class="text-dark" data-lang-key="feature_card4_title">
+              Panel de Control
+            </h3>
+            <p class="text-dark" data-lang-key="feature_card4_description">
+              Navega fácilmente por la plataforma con una interfaz amigable que
+              te pone el control en tus manos, sin complicaciones.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <img
+        src="assets/waves1.png"
+        alt="Wave Transition"
+        class="wave-divider"
+      />
+
+      <section id="services" class="services section-bg-bright-green">
+        <h2 class="section-title text-light" data-lang-key="services_title">
+          Servicios
+        </h2>
+        <p
+          class="section-description text-light"
+          data-lang-key="services_description"
+        >
+          Más allá de la plataforma, EcoVolt te ofrece un acompañamiento experto
+          y soluciones personalizadas para cada etapa de tu transformación
+          energética.
+        </p>
+        <div class="services-content-grid">
+          <div class="service-item">
+            <img
+              src="assets/electricistas1.jpg"
+              alt="Consultoría Energética"
+            />
+            <div class="service-text">
+              <h3 class="text-light" data-lang-key="service_card1_title">
+                Consultoría y Auditorías Energéticas
+              </h3>
+              <p class="text-light" data-lang-key="service_card1_description">
+                Nuestros expertos realizan análisis exhaustivos de tu consumo
+                actual y te guían con estrategias personalizadas para maximizar
+                el ahorro y la eficiencia.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <img src="assets/offer-1.jpg" alt="Instalación IoT" />
+            <div class="service-text">
+              <h3 class="text-light" data-lang-key="service_card2_title">
+                Instalación y Configuración de Dispositivos IoT
+              </h3>
+              <p class="text-light" data-lang-key="service_card2_description">
+                Nos encargamos de la implementación completa de nuestros
+                sensores y hardware, asegurando una configuración óptima y una
+                recolección de datos sin interrupciones.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <img src="assets/soporte.jpg" alt="Soporte Continuo" />
+            <div class="service-text">
+              <h3 class="text-light" data-lang-key="service_card3_title">
+                Capacitación y Soporte Continuo
+              </h3>
+              <p class="text-light" data-lang-key="service_card3_description">
+                Capacitamos a tu equipo para aprovechar al máximo la plataforma
+                EcoVolt y te brindamos soporte técnico dedicado para resolver
+                cualquier consulta o incidente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <img
+        src="assets/waves2.png"
+        alt="Wave Transition"
+        class="wave-divider"
+      />
+
+      <section id="cases" class="cases section-bg-light-green">
+        <h2 class="section-title text-dark" data-lang-key="cases_title">
+          Casos de Éxito EcoVolt
+        </h2>
+        <p
+          class="section-description text-dark"
+          data-lang-key="cases_description"
+        >
+          Descubre cómo empresas líderes en Perú transformaron su gestión
+          energética y lograron ahorros significativos con EcoVolt.
+        </p>
+        <div class="cards-grid">
+          <div class="card card-case section-bg-white">
+            <img
+              src="assets/electricistas2.jpg"
+              alt="Grupo Minero Andino"
+            />
+            <div class="card-content">
+              <h3 class="text-dark" data-lang-key="case_card1_title">
+                Grupo Minero Andino
+              </h3>
+              <p class="text-dark" data-lang-key="case_card1_description">
+                Reducción del 25% en Costos Eléctricos. Implementación de
+                monitoreo IoT en operaciones mineras clave.
+              </p>
+            </div>
+          </div>
+          <div class="card card-case section-bg-white">
+            <img
+              src="assets/empresas.png"
+              alt="Industria Textil 'Tejidos del Sol'"
+            />
+            <div class="card-content">
+              <h3 class="text-dark" data-lang-key="case_card2_title">
+                Industria Textil 'Tejidos del Sol'
+              </h3>
+              <p class="text-dark" data-lang-key="case_card2_description">
+                Optimización del 18% en consumo de maquinaria. Reducción de
+                huella de carbono y cumplimiento de objetivos de sostenibilidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <img
+        src="assets/waves1.png"
+        alt="Wave Transition"
+        class="wave-divider"
+      />
+
+      <section id="testimonials" class="testimonials section-bg-bright-green">
+        <h2 class="section-title text-light" data-lang-key="testimonials_title">
+          Testimonios
+        </h2>
+        <p
+          class="section-description text-light"
+          data-lang-key="testimonials_description"
+        >
+          Conoce las experiencias de empresas y profesionales que ya están
+          transformando su gestión energética con EcoVolt.
+        </p>
+        <div class="testimonial-carousel-container">
+          <div class="testimonial-carousel">
+            <div
+              class="card card-testimonial section-bg-light-green active-testimonial"
+            >
+              <p
+                class="testimonial-text text-dark"
+                data-lang-key="testimonial1_text"
+              >
+                "EcoVolt ha sido un antes y un después para nuestra planta. La
+                reducción en los costos de energía es notable y el monitoreo nos
+                da una tranquilidad que antes no teníamos. ¡Altamente
+                recomendado!"
+              </p>
+              <p
+                class="testimonial-author text-dark"
+                data-lang-key="testimonial1_author"
+              >
+                Ing. Ana Mendoza
+              </p>
+              <p
+                class="testimonial-role text-dark"
+                data-lang-key="testimonial1_role"
+              >
+                Gerente de Operaciones, Construcciones del Pacífico S.A.
+              </p>
+            </div>
+            <div class="card card-testimonial section-bg-light-green">
+              <p
+                class="testimonial-text text-dark"
+                data-lang-key="testimonial2_text"
+              >
+                "Gracias a la plataforma de EcoVolt, hemos optimizado el consumo
+                eléctrico de nuestras sucursales en todo el país. La interfaz es
+                intuitiva y el soporte técnico es excepcional. Nos ha permitido
+                cumplir nuestras metas de sostenibilidad."
+              </p>
+              <p
+                class="testimonial-author text-dark"
+                data-lang-key="testimonial2_author"
+              >
+                Lic. Carlos Rojas
+              </p>
+              <p
+                class="testimonial-role text-dark"
+                data-lang-key="testimonial2_role"
+              >
+                Director de Sostenibilidad, Grupo Retail Perú
+              </p>
+            </div>
+            <div class="card card-testimonial section-bg-light-green">
+              <p
+                class="testimonial-text text-dark"
+                data-lang-key="testimonial3_text"
+              >
+                "La implementación de EcoVolt en nuestro centro de datos fue
+                sorprendentemente rápida. Ahora tenemos control total sobre el
+                consumo de cada rack, lo que se traduce en ahorros
+                significativos y una mayor eficiencia operativa. Una inversión
+                que vale la pena."
+              </p>
+              <p
+                class="testimonial-author text-dark"
+                data-lang-key="testimonial3_author"
+              >
+                Arq. Patricia Torres
+              </p>
+              <p
+                class="testimonial-role text-dark"
+                data-lang-key="testimonial3_role"
+              >
+                Gerente de Infraestructura, Datacenter Andino
+              </p>
+            </div>
+            <div class="card card-testimonial section-bg-light-green">
+              <p
+                class="testimonial-text text-dark"
+                data-lang-key="testimonial4_text"
+              >
+                "Como electricista independiente, EcoVolt me ha dado las
+                herramientas para ofrecer un servicio mucho más profesional. El
+                análisis de datos me permite diagnosticar problemas de consumo
+                con una precisión que mis clientes valoran mucho."
+              </p>
+              <p
+                class="testimonial-author text-dark"
+                data-lang-key="testimonial4_author"
+              >
+                Juan Pérez
+              </p>
+              <p
+                class="testimonial-role text-dark"
+                data-lang-key="testimonial4_role"
+              >
+                Electricista Certificado, Juan Pérez Soluciones Eléctricas
+              </p>
+            </div>
+            <div class="card card-testimonial section-bg-light-green">
+              <p
+                class="testimonial-text text-dark"
+                data-lang-key="testimonial5_text"
+              >
+                "La capacitación que recibí de EcoVolt fue clave. Ahora puedo
+                instalar y configurar los dispositivos IoT de manera eficiente,
+                y la app me ayuda a mostrar el impacto real a mis clientes. Es
+                una ventaja competitiva."
+              </p>
+              <p
+                class="testimonial-author text-dark"
+                data-lang-key="testimonial5_author"
+              >
+                María Fernández
+              </p>
+              <p
+                class="testimonial-role text-dark"
+                data-lang-key="testimonial5_role"
+              >
+                Técnica Electricista, ElectroServicios Innova
+              </p>
+            </div>
+            <div class="card card-testimonial section-bg-light-green">
+              <p
+                class="testimonial-text text-dark"
+                data-lang-key="testimonial6_text"
+              >
+                "Utilizo EcoVolt para todas mis auditorías energéticas. Me
+                facilita enormemente la identificación de puntos críticos y la
+                elaboración de informes. Mis clientes confían más en mis
+                recomendaciones porque están basadas en datos precisos."
+              </p>
+              <p
+                class="testimonial-author text-dark"
+                data-lang-key="testimonial6_author"
+              >
+                Roberto Quispe
+              </p>
+              <p
+                class="testimonial-role text-dark"
+                data-lang-key="testimonial6_role"
+              >
+                Consultor Energético Independiente
+              </p>
+            </div>
+          </div>
+          <button class="carousel-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <img
+        src="assets/waves2.png"
+        alt="Wave Transition"
+        class="wave-divider"
+      />
+
+      <section id="about-us" class="about-us section-bg-light-green">
+        <h2 class="section-title text-dark" data-lang-key="about_us_title">
+          Sobre EcoVolt
+        </h2>
+        <div class="about-us-content">
+          <div class="about-us-cards-container">
+            <div class="card card-about-us section-bg-white">
+              <h3 class="text-dark" data-lang-key="about_us_mission_title">
+                Misión
+              </h3>
+              <p class="text-dark" data-lang-key="about_us_mission_text">
+                Transformar la gestión energética de las empresas peruanas,
+                ofreciendo soluciones innovadoras y sostenibles que optimicen el
+                consumo, reduzcan costos y contribuyan a un futuro más verde.
+              </p>
+            </div>
+            <div class="card card-about-us section-bg-white">
+              <h3 class="text-dark" data-lang-key="about_us_vision_title">
+                Visión
+              </h3>
+              <p class="text-dark" data-lang-key="about_us_vision_text">
+                Ser la empresa líder en soluciones de gestión energética en
+                Perú, reconocida por nuestra tecnología de vanguardia, nuestro
+                compromiso con el medio ambiente y la excelencia en el servicio
+                al cliente.
+              </p>
+            </div>
+          </div>
+          <div class="about-us-video">
+            <iframe
+              src="https://www.youtube.com/embed/0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <img
+        src="assets/waves1.png"
+        alt="Wave Transition"
+        class="wave-divider"
+      />
+
+      <section id="contact" class="contact section-bg-bright-green">
+        <h2 class="section-title text-light" data-lang-key="contact_title">
+          Contáctanos
+        </h2>
+        <p
+          class="section-description text-light"
+          data-lang-key="contact_description"
+        >
+          ¿Tienes preguntas o necesitas una demo? Envíanos un mensaje y te
+          responderemos a la brevedad.
+        </p>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label
+              for="contactEmail"
+              class="text-light"
+              data-lang-key="contact_email_label"
+              >Correo Electrónico:</label
+            >
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              required
+              placeholder="tu.correo@ejemplo.com"
+            />
+            <div class="error-message" id="emailError"></div>
+          </div>
+          <div class="form-group">
+            <label
+              for="contactPhone"
+              class="text-light"
+              data-lang-key="contact_phone_label"
+              >Número de Teléfono:</label
+            >
+            <input
+              type="tel"
+              id="contactPhone"
+              name="phone"
+              required
+              placeholder="+51 9XX XXX XXX"
+            />
+            <div class="error-message" id="phoneError"></div>
+          </div>
+          <div class="form-group">
+            <label
+              for="contactMessage"
+              class="text-light"
+              data-lang-key="contact_message_label"
+              >Tu Mensaje:</label
+            >
+            <textarea
+              id="contactMessage"
+              name="message"
+              rows="5"
+              required
+              placeholder="Escribe tu mensaje aquí..."
+            ></textarea>
+            <div class="error-message" id="messageError"></div>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-submit"
+            data-lang-key="contact_send_btn"
+          >
+            Enviar Mensaje
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section footer-brand">
+          <img
+            src="assets/logo2.png"
+            alt="EcoVolt Logo"
+            class="footer-logo"
+          />
+          <span class="footer-brand-name" data-lang-key="footer_brand_name"
+            >EcoVolt</span
+          >
+        </div>
+
+        <div class="footer-section">
+          <h4 data-lang-key="footer_contact_title">Contacto</h4>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-lang-key="footer_address">Miraflores, Lima, Perú</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span data-lang-key="footer_phone">+51 987 654 321</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span data-lang-key="footer_email">info@ecovolt.com</span>
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4 data-lang-key="footer_legal_title">Legales</h4>
+          <ul>
+            <li>
+              <a href="#" data-lang-key="footer_privacy_policy"
+                >Política de Privacidad</a
+              >
+            </li>
+            <li>
+              <a href="#" data-lang-key="footer_terms_conditions"
+                >Términos y Condiciones</a
+              >
+            </li>
+            <li>
+              <a href="#" data-lang-key="footer_cookies_policy"
+                >Política de Cookies</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 data-lang-key="footer_about_us_title">Nosotros</h4>
+          <ul>
+            <li>
+              <a href="#about-us" data-lang-key="footer_who_we_are"
+                >Quiénes Somos</a
+              >
+            </li>
+            <li>
+              <a href="#about-us" data-lang-key="footer_our_mission"
+                >Nuestra Misión</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" data-lang-key="footer_testimonials"
+                >Testimonios</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 data-lang-key="footer_resources_title">Recursos</h4>
+          <ul>
+            <li>
+              <a href="#" data-lang-key="footer_faq">Preguntas Frecuentes</a>
+            </li>
+            <li><a href="#" data-lang-key="footer_blog">Blog</a></li>
+            <li><a href="#" data-lang-key="footer_support">Soporte</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p data-lang-key="footer_copyright_text">
+          &copy; 2025 EcoVolt. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <p data-lang-key="modal_message_sent">¡Mensaje enviado con éxito!</p>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
